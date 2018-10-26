@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# dynamic lookup patches
+curl -L https://github.com/openturns/openturns/commit/d3ddfaba807a649a7a95cefce9f66b4ce22514ee.patch | patch -p1
+curl -L https://github.com/openturns/openturns/commit/e9f265e38b30091eefa324489aeef6f881033408.patch | patch -p1
+curl -L https://github.com/openturns/openturns/commit/0fb469153aa8bb0035c62d0ed56122733d20fcc8.patch | patch -p1
+
 mkdir build && cd build
 
 cmake \
