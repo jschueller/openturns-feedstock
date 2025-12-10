@@ -1,10 +1,3 @@
-
-:: remove -GL from CXXFLAGS
-set "CXXFLAGS=-MD"
-
-:: from Azure
-set "Boost_ROOT="
-
 cmake -LAH -G "Ninja" ^
     -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%" ^
     -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ^
